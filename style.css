@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    color: white;
+    transition: background 1s ease, color 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: black;
+}
+
+/* 🌌 Galaxy Background */
+.stars, .twinkling {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.stars {
+    background: black url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+}
+
+.twinkling {
+    background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    animation: moveStars 200s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#resetBtn {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.mood-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.mood {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.15);
+    color: inherit;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.mood:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: rgba(255,255,255,0.3);
+}
+
+.output {
+    margin-top: 40px;
+    transition: 0.5s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.dark-text,
+.dark-text * {
+    color: black !important;
+}
