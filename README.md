@@ -11,4 +11,4 @@ This is an interactive emotion-based website that represents different human fee
 ### 🌟 Emotions View 2
 ![Emotion View 2](2.png)
 
-For reference added vercel link: https://moodsync-369.vercel.app/
+For reference added the website link: https://moodsync-369.vercel.app/
